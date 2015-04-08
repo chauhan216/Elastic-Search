@@ -1,0 +1,62 @@
+<input type="text" class="text" ng-model="textToSearch" ng-model-options="{ debounce: 100 }" ng-change="searchProductName()" autofocus>
+<input type="button" value="Search" ng-click="searchProduct()">
+<div id="allCategoryList">
+    <ul> 
+       <li ng-repeat = "value in menuList" class="catlist{{$index}}" ng-click="select(value,$index)" ng-mouseover="showSubCategory(value.category_code , $index)" 
+       >{{value.name}}</li>   
+    </ul>
+</div>
+<div class="subCategory" ng-show="subCategoryShow" ng-mouseleave="subCategoryShow=false;">
+    <ul>
+        <li ng-repeat = "value in subCategoryList" >{{value.name}}</li>
+    </ul>
+</div>
+<div ng-show="productFound" style="margin:10px 0px 0px 10px;"> Showing Results For :
+    <span>{{resultShow}}</span>
+    <!-- <span ng-show="nextShow" class="next" ng-click="nextPage()"> Next</span> -->
+    <div ng-show="noResult"> No results found</div>
+</div>
+<div class="allProducts col-xs-12" ng-show="productFound " style="padding:10px ">
+    <div class="sidebar col-xs-2 padding">
+        <div class="category">
+            <ul class="categoryList">
+                <li class="listHeader"> Category</li>
+                <li ng-repeat="value in menuList" ng-click="select(value,$index)">{{value.name}}</li>
+            </ul>
+        </div>
+        <div class="category" ng-show="brandList">
+            <ul>
+                <li class="listHeader"> Brand</li>
+                <li ng-repeat="value in brandArray">
+                    <input type="checkbox" ng-model="select" value="{{value}}" ng-change="change(value,$index,select)" id="ng-change-example1" />{{value}}
+                </li>
+            </ul>
+        </div>
+        <div class="category" ng-show="attributeList" ng-repeat="attribute in allCategoryAttributes">
+            <ul>
+                <li class="listHeader"> {{attribute.name}}</li>
+                <li ng-repeat="value in attribute.value">
+                    <input type="checkbox" ng-model="attributeselect" value="{{value}}"  id="ng-change-example1" ng-change = "selectedAttribute(attribute.name,value,attributeselect)"/>{{value}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-10 ">
+        <div ng-repeat="value in productResult" class="containerP col-xs-5">
+            <img src="download.jpg" class="col-xs-5 padding" />
+            <div class="afterImage col-xs-7 ">
+                <div class="productName col-xs-11 padding">{{value[0].name}}</div>
+                <div class="productDesc col-xs-11 padding">{{value[0].description | limitTo : 40}}{{value[0].description.length>40?'......': ''}}{{!value[0].description?'No Description Available': ''}}</div>
+                <div class="productCat col-xs-11 padding">{{value[0].category}}</div>
+                <div class="productSubcat col-xs-11 padding">{{value[0].subcategory}}</div>
+                <div class="productBrand col-xs-11 padding">{{value[0].details.brand}}</div>
+                <div class="productMan col-xs-11 padding">{{value[0].details.manufacturer}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="list" ng-show="nameFound ">
+    <ul>
+        <li ng-repeat="value in nameResult" ng-click="selectedShow(value)">{{value[0].name}}
+</div>
+

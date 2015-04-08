@@ -1,0 +1,761 @@
+[{
+"store_id" : "store1231",
+"name" : "Apple Store",
+"description" :"Apple Store",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "1734 Clemente Ave",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@apple.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "444-444-444"
+    },
+  "websitelink" : "www.mysite.com"                
+  },    
+"Assets" : 
+      {"images" : ["http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/80px-Apple_logo_black.svg.png"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid1"  
+},
+{
+"store_id" : "store1232",
+"name" : "St. Louis Free Press",
+"description" :"We are a small local group that releases hand-printed art/word throughout St. Louis and the Midwest region with the intention to connect and inspire in a non-traditional manner.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "Somewhere Near, Saint Louis",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@stlfreepresss.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "62025"
+    },
+  "websitelink" : "stlfreepresss.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/gBF1HJHJ5uqWkzwLKqyMZstuUNQ=/200x200/d1g145x70srn7h.cloudfront.net/files/e69428282b6ee369da49e52a71e42e473a66151d/original.png"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid2"
+},
+{
+"store_id" : "store1233",
+"name" : "Devall Design & Home",
+"description" :"With over 20 years building homes and remodeling spaces, I make things look as they should... Devall.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "562 N. Larchmont Blvd",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@stlfreepresss.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "62025"
+    },
+  "websitelink" : "stlfreepresss.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/CXobJgXrLm_lno9ksPFEBkXaWyQ=/200x200/d1g145x70srn7h.cloudfront.net/files/de4bc94d5979aec21aa40ec17a837bde428b168e/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid3"
+},
+{
+"store_id" : "store1234",
+"name" : "David Hsu Design",
+"description" :"in search of the delightful and the enriching.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "565 Larchmont Blvd",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@davidhsudesign.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "917-727-7788"
+    },
+  "websitelink" : "www.davidhsudesign.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/aeiy1S_wIFzBz8nLgUOQQIY3psw=/200x200/d1g145x70srn7h.cloudfront.net/files/134cb4d92114afbd91e993b28fdaff4d26109f70/original.png"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid4"
+},
+{
+"store_id" : "store1235",
+"name" : "Forager Botanicals",
+"description" :"Forager Botanicals is a Brooklyn based natural fragrance and beauty company focused on creating beautiful products using all natural ingredients.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "565 Larchmont Blvd",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@forager.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "888-888-888"
+    },
+  "websitelink" : "www.Forager.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/Xdabz7FhYOdhojtCVAd-sMESnRQ=/200x200/d1g145x70srn7h.cloudfront.net/files/c75fb293781b5186509a2e11c52a902a8066b410/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid5"
+},
+{
+"store_id" : "store1236",
+"name" : "Bonmarche",
+"description" :"French Basque and Catalan cotton canvas fabrics and accessories. Espadrilles, leather trimmed bags, patio furniture including deck chairs, Fermob bistro tables and chairs, Tuuci Umbrellas and Outdoor Sunbrella fabrics. We provide custom upholstery and design services and make our products in France and the United States only.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "1609 Alcaldesa St.",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@Bonmarche.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "222-222-288"
+    },
+  "websitelink" : "www.Bonmarche.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/3xmovxs59ubGBRuBV4VZ1FnE5Zs=/200x200/d1g145x70srn7h.cloudfront.net/files/8bf18df4612f6cd1c3105f74474f6cd971014fde/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid6"
+},
+{
+"store_id" : "store1237",
+"name" : "Insight Coffee Roasters",
+"description" :"French Basque and Catalan cotton canvas fabrics and accessories. Espadrilles, leather trimmed bags, patio furniture including deck chairs, Fermob bistro tables and chairs, Tuuci Umbrellas and Outdoor Sunbrella fabrics. We provide custom upholstery and design services and make our products in France and the United States only.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "1609 Alcaldesa St.",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@insightcoffee.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "23488"
+    },
+  "websitelink" : "insightcoffee.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/bEbWudBp-iZzwL7DMfQOiPOfJ9k=/200x200/d1g145x70srn7h.cloudfront.net/files/5a6a7e35ed524d73fe2dbab33fd45e90b13e131f/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid7"
+},
+{
+"store_id" : "store1238",
+"name" : "MAIKA",
+"description" :"Making everyday goods delightful.",
+"status" : "true",
+"storeaddress":{
+  "addressLine1" : "2565 3rd St., #304",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@maika.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "23777"
+    },
+  "websitelink" : "maika.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/O_RwsxD84_BaB9BukWLvetujPRw=/200x200/d1g145x70srn7h.cloudfront.net/files/9b97fa1b96119d2dbabd2c38850f79fe74b71b30/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid8"
+},
+{
+"store_id" : "store1239",
+"name" : "Company Jones",
+"description" :"Co.Jones ([koˈxones]) : Design with courage, brazenness, nerve. ",
+"status" : "false",
+"storeaddress":{
+  "addressLine1" : "2565 3rd St., #304",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@companyjones.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "27949"
+    },
+  "websitelink" : "companyjones.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/GgqEMJEHN4-9eH9ZQmd3lYYSy8I=/200x200/d1g145x70srn7h.cloudfront.net/files/1b4cf59e3a83c1e17a74bf3e4df045442361327e/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid9"
+},
+{
+"store_id" : "store12310",
+"name" : "Sharon Z Jewelry",
+"description" :"Modern Jewelry with a Modern Conscience",
+"status" : "false",
+"storeaddress":{
+  "addressLine1" : "Mobile business last seen near 308 Jessie St",
+  "city" : "Los Angeles",
+  "stateorprovince" : "California",
+  "country" : "US"
+  },
+"contact" :
+  {
+  "StoreEmail" : "hello@sharonzjewelry.com",
+  "phone1": 
+    { 
+    "phonename" : "MO",
+    "phonenumber": "27910"
+    },
+  "websitelink" : "www.sharonzjewelry.com"                
+  },    
+"Assets" : 
+      {"images" : ["https://d2isyty7gbnm74.cloudfront.net/njJUVQD6RF5kg6Of_E8yLMS6b38=/200x200/d1g145x70srn7h.cloudfront.net/files/73f1cea0ecef9241c6193153b9b04798/original.jpeg"]
+      },
+"HoursofOperation" : 
+  { 
+  "timezone":"UTC-08:00",
+  "daysofoperaton":
+    {
+    "Monday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Tuesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Wednesday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Thursday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Friday": 
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"4PM"
+      },
+    "Saturday":
+      {
+      "open" : true,      
+      "timeopens"  :"10AM",
+      "timecloses" :"1PM"
+      },
+
+    "Sunday":
+      {
+      "open" : false,
+      "timeopens"  :"",
+      "timecloses" :""
+      }
+    }
+  },
+"ActiveCatalogID": "cataid10"
+}
+]
