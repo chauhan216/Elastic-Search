@@ -1,0 +1,947 @@
+[{ 
+  "product_id" :"product1234" ,
+  "name" : "Napkins",
+  "description" : "Napkins Set of 4",
+  "category" : "Art & Design",
+  "subcategory" : "textiles",
+  "category_code" : ["textiles"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Traingles",
+					"SKU":"SKUid1234",
+					"unitofmeasure":"pack",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":100,
+							   	"quantityreserve":10,
+							   	"alert":20,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					 "Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/rF61KR8Meeu0378DvqzpXzEbq0A=/646x646/d1g145x70srn7h.cloudfront.net/files/840fdd9b72b83eb82b846289229e8c83fc3379e4/original.jpeg"],
+      							"videolinks" : []
+     						  },
+            "attributes" :
+            [
+            {
+              "name" : "size",
+              "value" :"4 X 4"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Starbursts",
+    "manufacturer" : "Starbursts"
+    },
+  "overallrating" : 5
+},
+{ 
+  "product_id" :"product1235" ,
+  "name" : "Teddy V",
+  "description" : "Teddy S Set of 2",
+  "category" : "BABY & KIDS",
+  "subcategory" : "TOYS",
+  "category_code" : ["TOYS"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Red teddy",
+					"SKU":"SKUid1235",
+					"unitofmeasure":"pack",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":100,
+							   	"quantityreserve":10,
+							   	"alert":20,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/FbpSSXhUMgoOUDQRUDodVg-oEmg=/646x646/d1g145x70srn7h.cloudfront.net/files/770432ccb0fdf68e4f666191beadad781492a60c/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+            "attributes" :
+            [
+            {
+              "name" : "color",
+              "value" :"Red"
+              },
+              {
+                "name" :"size",
+                "value" :"large"
+                }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Suede Patchwork",
+    "manufacturer" : "Suede Patchwork"
+    },
+  "overallrating" : 4
+  },
+  { 
+  "product_id" :"product1236" ,
+  "name" : "Kitty",
+  "description" : "Kitty is pounding out the beat that all the other hep-cats dig.",
+  "category" : "BABY & KIDS",
+  "subcategory" : "CLOTHING",
+  "category_code" : ["CLOTHING"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Color Orange",
+					"SKU":"SKUid1236",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":10,
+							   	"quantityreserve":5,
+							   	"alert":6,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/TKzunJ4djCB9KmvEhYKlsloBaRg=/276x276/square-production.s3.amazonaws.com/files/f7887ad9a38f6b08921b058aa7695add/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+            "attributes" :
+            [
+            {
+              "name" : "size",
+              "value" :"28"
+              },
+               {
+              "name" : "color",
+              "value" :"blue"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Aubergine and Tangerine",
+    "manufacturer" : "Aubergine and Tangerine"
+    },
+  "overallrating" : 3
+  },
+  { 
+  "product_id" :"product1237" ,
+  "name" : "Shell Chair",
+  "description" : "Among the most famous designs created by Danish modernist, this three-legged accent chair almost fell into obscurity.",
+  "category" : "HOME",
+  "subcategory" : "FURNITURE",
+  "category_code" : ["FURNITURE"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Color brown",
+					"SKU":"SKUid1237",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":10,
+							   	"quantityreserve":5,
+							   	"alert":6,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/MgKfXfVGuzuTwlVjOMoXlCaJh5Q=/646x646/d1g145x70srn7h.cloudfront.net/files/e8cf2a6676b8cf1be2ee80d535494412616f09e3/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+            "attributes" :
+            [
+            {
+              "name" : "material",
+              "value" :"Saal"
+              },
+               {
+              "name" : "color",
+              "value" :"brown"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Tangerine",
+    "manufacturer" : "Tangerine"
+    },
+  "overallrating" : 3
+  },
+  { 
+  "product_id" :"product1238",
+  "name" : "DESKTOP",
+  "description" : "OptiPlex 620. We have several DELL computers for sale Dell servers, monitors, usb cables, routers, hdmi cables, rca cables Laptop charger.",
+  "category" : "TECH",
+  "subcategory" : "computers",
+  "category_code" : ["computers"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"CPU",
+					"SKU":"SKUid1238",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":5,
+							   	"quantityreserve":2,
+							   	"alert":3,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/IVrg7ZFe22taql47Gr0h0HubOr8=/646x646/d1g145x70srn7h.cloudfront.net/files/ecb98b3bb9abbaaeffa3424254908ffcc36dab35/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+            "attributes" :
+            [
+            {
+              "name" : "configuration",
+              "value" :"2GB"
+              },
+               {
+              "name" : "version",
+              "value" :"dellram31"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Dell",
+    "manufacturer" : "Dell"
+    },
+  "overallrating" : 4
+  },
+  { 
+  "product_id" :"product1239",
+  "name" : "bag",
+  "description" : "",
+  "category" : "HEALTH AND BEAUTY",
+  "subcategory" : "personal care",
+  "category_code" : ["personal care"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Cosmetic bag Bahia",
+					"SKU":"SKUid1239",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":50,
+							   	"quantityreserve":9,
+							   	"alert":4,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/lZtzVDoMrrl11iWd-E-cxEIfCkA=/646x646/d1g145x70srn7h.cloudfront.net/files/e6c785d4f88eb9ad667349527b70b9b385fdc7a7/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+                  "attributes" :
+            [
+            {
+              "name" : "type",
+              "value" :"Hand Bag"
+              },
+               {
+              "name" : "design",
+              "value" :"stripes"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "mosaic",
+    "manufacturer" : "mosaic"
+    },
+  "overallrating" : 2
+  },
+  { 
+  "product_id" :"product12310",
+  "name" : "small gyroscope necklace",
+  "description" : "A petite handmade sterling silver gyroscope swings along a delicate chain. 16-18 adjustable length. Handmade in San Francisco.",
+  "category" : "JEWELRY",
+  "subcategory" : "Necklaces",
+  "category_code" : ["Necklaces"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Cosmetic bag Bahia",
+					"SKU":"SKUid12310",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":5,
+							   	"quantityreserve":2,
+							   	"alert":3,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/B7_0zYKG_sGlD7bKDidd2nQEEBE=/646x646/square-production.s3.amazonaws.com/files/58c20b166da5e9f957c4dafa7c595570/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+                  "attributes" :
+            [
+            {
+              "name" : "gemstone",
+              "value" :"Axinite"
+              },
+               {
+              "name" : "locketshape",
+              "value" :"heart"
+              }] 
+
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Gyroscope",
+    "manufacturer" : "Gyroscope"
+    },
+  "overallrating" : 3
+  },
+  { 
+  "product_id" :"product1239",
+  "name" : "bag",
+  "description" : "",
+  "category" : "HEALTH AND BEAUTY",
+  "subcategory" : "personal care",
+  "category_code" : ["personal care"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"Cosmetic bag Bahia",
+					"SKU":"SKUid1239",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":50,
+							   	"quantityreserve":9,
+							   	"alert":4,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/lZtzVDoMrrl11iWd-E-cxEIfCkA=/646x646/d1g145x70srn7h.cloudfront.net/files/e6c785d4f88eb9ad667349527b70b9b385fdc7a7/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+
+                  "attributes" :
+            [
+            {
+              "name" : "type",
+              "value" :"Sling Bag"
+              },
+               {
+              "name" : "color",
+              "value" :"pink"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "mosaic",
+    "manufacturer" : "mosaic"
+    },
+  "overallrating" : 2
+  },
+  { 
+  "product_id" :"product1231",
+  "name" : "Alex - Ebonized Cherry",
+  "description" : "In Season 2 of Twin Peaks, the character James Hurley is seduced by the rich and beautiful Evelyn Marsh.",
+  "category" : "ACCESSORIES",
+  "subcategory" : "Eyewear",
+  "category_code" : ["Eyewear"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"polarized black carl zeiss vision lenses",
+					"SKU":"SKUid1231",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":5,
+							   	"quantityreserve":2,
+							   	"alert":3,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/Sk_6D2B6hQviSfEl6MEs17ddfLU=/646x646/d1g145x70srn7h.cloudfront.net/files/04fdffd68892d15180d9364c95315f5585bdc42f/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+
+                  "attributes" :
+            [
+            {
+              "name" : "frame",
+              "value" :"Rimless"
+              },
+               {
+              "name" : "type",
+              "value" :"Sun Glasses"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Gyroscope",
+    "manufacturer" : "Gyroscope"
+    },
+  "overallrating" : 3
+  },
+  { 
+  "product_id" :"product1232",
+  "name" : "Espadrilles Mandarine",
+  "description" : "",
+  "category" : "FASHION",
+  "subcategory" : "Shoes",
+  "category_code" : ["Shoes"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"",
+					"SKU":"SKUid1232",
+					"unitofmeasure":"SINGLE",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },	
+					"Inventory":{
+							   	"quantityavailable":50,
+							   	"quantityreserve":10,
+							   	"alert":8,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/JrWROn8ELmPPlXRoxGvCI6y6Jsk=/646x646/d1g145x70srn7h.cloudfront.net/files/5b21e457dd7a12272f0b8a3f651d6af6188d0cda/original.jpeg"],
+      							"videolinks" : []
+     						  } ,
+
+
+                  "attributes" :
+            [
+            {
+              "name" : "color",
+              "value" :"Camel"
+              },
+               {
+              "name" : "type",
+              "value" :"Casual Shoes"
+              }] 
+					   	   
+				 }],
+    "details": 
+    {
+    "brand" : "Espadrilles Mandarine",
+    "manufacturer" : "Espadrilles Mandarine"
+    },
+  "overallrating" : 5
+  },
+  { 
+  "product_id" :"product1233",
+  "name" : "Chocolate Peanut Butter Marbled Fudge",
+  "description" : "",
+  "category" : "FOOD",
+  "subcategory" : "Sweets",
+  "category_code" : ["Sweets"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+					"name":"",
+					"SKU":"SKUid1233",
+					"unitofmeasure":"BOX",
+					"Pricing":{
+                 "regularPrice" : 10,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+					    	},	
+					"Inventory":{
+							   	"quantityavailable":100,
+							   	"quantityreserve":10,
+							   	"alert":12,
+							   	"online":true,
+							   	"instore":true
+					    	   },
+					"Assets":
+     						  {
+      							"imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/CDt1cIcyhuYZwtdaRhlv9b5zC7I=/646x646/d1g145x70srn7h.cloudfront.net/files/4841cce02dfc8503387bfe4a537aff2e12d6c19b/original.jpeg"],
+      							"videolinks" : []
+     						  } 
+					   	   ,
+
+
+                  "attributes" :
+            [
+            {
+              "name" : "stuff",
+              "value" :"Almond "
+              }] 
+				 }],
+    "details": 
+    {
+    "brand" : "IC Confections",
+    "manufacturer" : "IC Confections"
+    },
+  "overallrating" : 5
+  },
+  { 
+  "product_id" :"product12311" ,
+  "name" : "Starbursts Recycled Canvas Bucket (Yellow)",
+  "description" : "XL: 20' high | LG: 9' high | SM: 4' high",
+  "category" : "Art & Design",
+  "subcategory" : "textiles",
+  "category_code" : ["textiles"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"Bucket",
+          "SKU":"SKUid12311",
+          "unitofmeasure":"pack",
+          "Pricing":{
+                 "regularPrice" : 22,     
+                 "offerPrice" : 8,         
+                 "discountAmount" : 2
+                },  
+          "Inventory":{
+                  "quantityavailable":100,
+                  "quantityreserve":10,
+                  "alert":20,
+                  "online":true,
+                  "instore":true
+                   },
+           "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/9UZ1dIv9gDnX8sQ-xtZhTgAUMzQ=/646x646/d1g145x70srn7h.cloudfront.net/files/caa29049c55672ffebdf68c2ced6ca0dbe41e270/original.jpeg"],
+                    "videolinks" : []
+                  }  ,
+
+
+                  "attributes" :
+            [
+            {
+              "name" : "color",
+              "value" :"White"
+              },
+              {
+                "name" :"material",
+                "value" : "Plastic"
+                }] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "Starbursts",
+    "manufacturer" : "Starbursts"
+    },
+  "overallrating" : 5
+},
+{ 
+  "product_id" :"product12312" ,
+  "name" : "Give Wisdom Leaves Give Wrap�",
+  "description" : "TAS SEEN ON 'O' MAGAZINE AND THE TODAY SHOW",
+  "category" : "Art & Design",
+  "subcategory" : "textiles",
+  "category_code" : ["textiles"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"Reusable Give Wrap",
+          "SKU":"SKUid12312",
+          "unitofmeasure":"pack",
+          "Pricing":{
+                 "regularPrice" : 17,     
+                 "offerPrice" : 17,         
+                 "discountAmount" : 0
+                },  
+          "Inventory":{
+                  "quantityavailable":100,
+                  "quantityreserve":10,
+                  "alert":20,
+                  "online":true,
+                  "instore":true
+                   },
+          "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/CYDCABN4oKrF16jdh0G5P_hbGiQ=/646x646/d1g145x70srn7h.cloudfront.net/files/55773659bc8fade8908a33e67617ef21257f3cc1/original.jpeg"],
+                    "videolinks" : []
+                  } ,
+
+
+
+                  "attributes" :
+            [
+            {
+              "name" : "color",
+              "value" :"White"
+              },
+              {
+                "name" :"material",
+                "value" : "Plastic"
+                }] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "MAIKA",
+    "manufacturer" : "MAIKA"
+    },
+  "overallrating" : 4
+  },
+  { 
+  "product_id" :"product12313" ,
+  "name" : "Give Cheer Starbursts Give Wrap",
+  "description" : "Give Cheer Starbursts Give Wrap",
+  "category" : "Art & Design",
+  "subcategory" : "textiles",
+  "category_code" : ["textiles"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$7.00 flat-rate per order",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"Color Orange",
+          "SKU":"SKUid12313",
+          "unitofmeasure":"SINGLE",
+          "Pricing":{
+                 "regularPrice" : 17,     
+                 "offerPrice" : 17,         
+                 "discountAmount" : 0
+                },  
+          "Inventory":{
+                  "quantityavailable":10,
+                  "quantityreserve":5,
+                  "alert":6,
+                  "online":true,
+                  "instore":true
+                   },
+          "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/Ff5SOFIaMUpi6_g3Rj53gtL0S9k=/646x646/d1g145x70srn7h.cloudfront.net/files/72315bc7a946761d3b1626f7ea5fe99c902d52e0/original.jpeg"],
+                    "videolinks" : []
+                  } ,
+
+
+
+                  "attributes" :
+            [
+            {
+              "name" : "color",
+              "value" :"Red"
+              }
+              ] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "MAIKA",
+    "manufacturer" : "MAIKA"
+    },
+  "overallrating" : 3
+  },
+  { 
+  "product_id" :"product12314" ,
+  "name" : "Nickolaj",
+  "description" : "Nickolaj is made of soft and cuddly fleece, stuffed with poly fiber, has a faux leather nose, and safety eyes to ensure he lasts as long as the memories you create with him. ",
+  "category" : "BABY & KIDS",
+  "subcategory" : "TOYS",
+  "category_code" : ["TOYS"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$3.00 for this item.",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"light brown teddy",
+          "SKU":"SKUid12314",
+          "unitofmeasure":"pack",
+          "Pricing":{
+                 "regularPrice" : 22,     
+                 "offerPrice" : 20,         
+                 "discountAmount" : 2
+                },  
+          "Inventory":{
+                  "quantityavailable":100,
+                  "quantityreserve":10,
+                  "alert":20,
+                  "online":true,
+                  "instore":true
+                   },
+          "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/VH9HDd3hVH0WH3dkEs4kyolxpLc=/646x646/d1g145x70srn7h.cloudfront.net/files/1c6ab911506b4ce7f43dfea21a840d83df4f6058/original.jpeg"],
+                    "videolinks" : []
+                  } ,
+
+
+
+                  "attributes" :
+            [
+            {
+              "name" : "material",
+              "value" :"Feather"
+              }
+              ] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "JANIE XY",
+    "manufacturer" : "JANIE XY"
+    },
+  "overallrating" : 4
+  },
+  { 
+  "product_id" :"product12315" ,
+  "name" : "Drumstick Rattle",
+  "description" : "Drumstick rattle comes complete with deli style packaging making it a perfect gift for baby showers and newborns.",
+  "category" : "BABY & KIDS",
+  "subcategory" : "TOYS",
+  "category_code" : ["TOYS"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$2.50 for this item.",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"Color light-Orange",
+          "SKU":"SKUid12315",
+          "unitofmeasure":"SINGLE",
+          "Pricing":{
+                 "regularPrice" : 17,     
+                 "offerPrice" : 15,         
+                 "discountAmount" : 2
+                },  
+          "Inventory":{
+                  "quantityavailable":10,
+                  "quantityreserve":5,
+                  "alert":6,
+                  "online":true,
+                  "instore":true
+                   },
+          "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/EnPsQClNbtGI6htKNa_vRx_LPqU=/646x646/d1g145x70srn7h.cloudfront.net/files/75d564005b8990220ef047d53a2af2b7f73bce40/original.jpeg"],
+                    "videolinks" : []
+                  } ,
+                  "attributes" :
+                  [
+                    {
+                    "name" : "drum",
+                    "value" :"wooden"
+                    }
+                  ] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "JANIE XY",
+    "manufacturer" : "JANIE XY"
+    },
+  "overallrating" : 3
+  },
+  { 
+  "product_id" :"product12316" ,
+  "name" : "Surprise Monster Kit",
+  "description" : "This kit comes with two pieces of fur, wool blend felt for making the mouth and safety eyes. All you need is fluff and needle and thread.",
+  "category" : "BABY & KIDS",
+  "subcategory" : "TOYS",
+  "category_code" : ["TOYS"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$3.50 for this item.",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"Color black",
+          "SKU":"SKUid12316",
+          "unitofmeasure":"SINGLE",
+          "Pricing":{
+                 "regularPrice" : 18,     
+                 "offerPrice" : 18,         
+                 "discountAmount" : 0
+                },  
+          "Inventory":{
+                  "quantityavailable":10,
+                  "quantityreserve":5,
+                  "alert":6,
+                  "online":true,
+                  "instore":true
+                   },
+          "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/Z4Gr-A261Bga-1MK2vAM7-rQcQw=/646x646/d1g145x70srn7h.cloudfront.net/files/db3b34e7b777aedef695bebfd684e6a3cc206618/original.jpeg"],
+                    "videolinks" : []
+                  }  ,
+                  "attributes" :
+                  [
+                    {
+                    "name" : "inktype",
+                    "value" :"Liduid Ink"
+                    }
+                  ] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "HEDGEHOG & RABBIT",
+    "manufacturer" : "HEDGEHOG & RABBIT"
+    },
+  "overallrating" : 3
+  },{ 
+  "product_id" :"product12317" ,
+  "name" : "Typographic Massachusetts map art print",
+  "description" : "This map art print makes a great gift for someone who has recently relocated, someone who loves where they are from, or someone who loves typography.This piece features the state of Massachusetts formed from each county's name written in the proper place and shape of that county.",
+  "category" : "Art & Design",
+  "subcategory" : "POSTERS&PRINTS",
+  "category_code" : ["POSTERS&PRINTS"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$2.00 for this item",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"length 8*10",
+          "SKU":"SKUid12317",
+          "unitofmeasure":"pack",
+          "Pricing":{
+                 "regularPrice" : 32,     
+                 "offerPrice" : 27,         
+                 "discountAmount" : 5
+                },  
+          "Inventory":{
+                  "quantityavailable":100,
+                  "quantityreserve":10,
+                  "alert":20,
+                  "online":true,
+                  "instore":true
+                   },
+           "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/f4kzzCC2nxKue8bwvJxVckb1mi8=/646x646/d1g145x70srn7h.cloudfront.net/files/fc5d29d5c644a15116f277b7d6a74d8519d91251/original.jpeg"],
+                    "videolinks" : []
+                  } ,
+                  "attributes" :
+                  [
+                    {
+                    "name" : "inktype",
+                    "value" :"Liduid Ink"
+                    }
+                  ] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "CAPOW! ART & DESIGN",
+    "manufacturer" : "CAPOW! ART & DESIGN"
+    },
+  "overallrating" : 5
+},
+{ 
+  "product_id" :"product12318" ,
+  "name" : "Mojito Cocktail Diagram Print",
+  "description" : "Another favorite of Mr. Hemingway, this minty rum treat is undeniably refreshing. Just don't order 10 of them on a Friday night at your favorite crowded bar. Bartenders hate that.Print of an original watercolor and ink painting.Print measures 8.5 x 11, and is printed with archival pigment inks on archival velvet fine art paper. The paper is slightly textured, like watercolor paper. The quality is pretty amazing, and is often mistaken for an original. Great for your home bar.",
+  "category" : "Art & Design",
+  "subcategory" : "POSTERS&PRINTS",
+  "category_code" : ["POSTERS&PRINTS"],
+  "deliveryspecs" :  "US addresses only",
+  "shippingspecs" : "$3.00 flat-rate per order + $0.50 for this item. ",
+  "returnsspecs" : "Please email hello@eppiko.com to request for the Return Number prior to mailing back your item(s).",
+  "variations" :[{
+          "name":"blacK Border painting",
+          "SKU":"SKUid12318",
+          "unitofmeasure":"pack",
+          "Pricing":{
+                 "regularPrice" : 20,     
+                 "offerPrice" : 20,         
+                 "discountAmount" : 0
+                },  
+          "Inventory":{
+                  "quantityavailable":100,
+                  "quantityreserve":10,
+                  "alert":20,
+                  "online":true,
+                  "instore":true
+                   },
+          "Assets":
+                  {
+                    "imagelinks" : ["https://d2isyty7gbnm74.cloudfront.net/EoIZDoPEHg2_xwsx_Cfxa368oCU=/646x646/square-production.s3.amazonaws.com/files/c45440ca17220e8c8196e7b38475ce9f3bb1e08b/original.jpeg"],
+                    "videolinks" : []
+                  } ,
+                  "attributes" :
+                  [
+                    {
+                    "name" : "inktype",
+                    "value" :"Toner"
+                    },
+                    {
+                      "name" :"cartridge",
+                      "value" : "Smart chips"
+                    }
+                  ] 
+                 
+         }],
+    "details": 
+    {
+    "brand" : "DRYWELL ART",
+    "manufacturer" : "DRYWELL ART"
+    },
+    "overallrating" : 5
+  }
+]
+  

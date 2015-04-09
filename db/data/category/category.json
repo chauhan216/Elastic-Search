@@ -1,0 +1,113 @@
+[
+  {
+  "category_code":"Art&Design",
+  "name":"Art & Design"
+  },
+  {
+  "category_code":"BABY&KIDS",
+  "name":"BABY & KIDS"
+  },
+  {
+  "category_code":"FASHION",
+  "name":"FASHION"
+  },
+  {
+  "category_code":"HEALTH AND BEAUTY",
+  "name":"HEALTH AND BEAUTY"
+  },
+  {
+  "category_code":"food",
+  "name":"food"
+  },
+  {
+  "category_code":"Sweets",
+  "name":"Sweets",
+  "parent_category":"food"
+  },
+  {
+  "category_code":"JEWELRY",
+  "name":"JEWELRY"
+  },
+  {
+  "category_code":"Necklaces",
+  "name":"Necklaces",
+  "parent_category":"JEWELRY"
+  },
+  {
+  "category_code":"ACCESSORIES",
+  "name":"ACCESSORIES"
+  },
+  {
+  "category_code":"Eyewear",
+  "name":"Eyewear",
+  "parent_category":"ACCESSORIES"
+  },
+  {
+  "category_code":"HOME",
+  "name":"HOME"
+  },
+  {
+  "category_code":"FURNITURE",
+  "name":"FURNITURE",
+  "parent_category":"HOME"
+  },
+  {
+  "category_code":"TECH",
+  "name":"TECH"
+  },
+  {
+  "category_code":"computers",
+  "name":"computers",
+  "parent_category":"TECH"
+  },
+  {
+  "category_code":"personal care",
+  "name":"personal care",
+  "parent_category":"HEALTH AND BEAUTY"
+  },
+  {
+  "category_code":"Shoes",
+  "name":"Shoes",
+  "parent_category":"FASHION"
+  },
+  {
+  "category_code":"textiles",
+  "name":"textiles",
+  "parent_category":"Art&Design"
+  },
+  {
+  "category_code":"POSTERS&PRINTS",
+  "name":"POSTERS & PRINTS",
+  "parent_category":"Art&Design"
+  },
+  {
+  "category_code":"FINEART",
+  "name":"FINE ART",
+  "parent_category":"Art&Design"
+  },
+  {
+  "category_code":"PHOTOGRAPHY",
+  "name":"PHOTOGRAPHY",
+  "parent_category":"Art&Design"
+  },
+  {
+  "category_code":"TOYS",
+  "name":"TOYS",
+  "parent_category":"BABY&KIDS"
+  },
+  {
+  "category_code":"CLOTHING",
+  "name":"CLOTHING",
+  "parent_category":"BABY&KIDS"
+  },
+  {
+  "category_code":"SUPPLIES",
+  "name":"SUPPLIES",
+  "parent_category":"BABY&KIDS"
+  },
+  {
+  "category_code":"GIFTS",
+  "name":"GIFTS",
+  "parent_category":"BABY&KIDS"
+  }
+]
