@@ -14,7 +14,7 @@ testElastic.config(function($stateProvider, $urlRouterProvider) {
 testElastic.controller("testController", function($scope, $http, $timeout, $q) {
 
 
-    var brandQuery = [];
+    $scope.brandQuery = [];
 
     $scope.result = [];
 
@@ -38,7 +38,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             .success(function(data) {
                 console.log("result is ", data);
                 $scope.productResult = data.product;
-                console.log("result is ", $scope.productResult);
+                console.log("result is ...", $scope.productResult);
                 console.log("total hits are ..", data.total);
                 $scope.total = data.total;
                 if (data.total > per_page) {
@@ -57,12 +57,12 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
 
 
 
-                for (var i in $scope.productResult) {
-                    console.log("...", $scope.productResult[i][0].details.brand);
-                    $scope.brandArray.push($scope.productResult[i][0].details.brand);
-                }
-                $scope.brandArray = _.uniq($scope.brandArray);
-                console.log("...brand is ", $scope.brandArray);
+                // for (var i in $scope.productResult) {
+                //     console.log("...", $scope.productResult[i][0].details.brand);
+                //     $scope.brandArray.push($scope.productResult[i][0].details.brand);
+                // }
+                // $scope.brandArray = _.uniq($scope.brandArray);
+                // console.log("...brand is ", $scope.brandArray);
                 defer.resolve(data);
             }).error(function(data) {
                 defer.reject(data);
@@ -70,6 +70,31 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             return defer.promise;
     }
 
+
+
+    $scope.getCategoryProducts = function(querySearch) {
+        $scope.productFound = true;
+        var defer = $q.defer();
+        $http.post("/search/category", querySearch)
+            .success(function(data) {
+                console.log("result is ", data);
+                $scope.productResult = data.product;
+                console.log("result is ", $scope.productResult);
+                console.log("total hits are ..", data.total);
+                $scope.total = data.total;
+                if ($scope.productResult.length > 0) {
+
+                    $scope.noResult = false;
+                } else {
+
+                    $scope.noResult = true;
+                }
+                defer.resolve(data);
+            }).error(function(data) {
+                defer.reject(data);
+            });
+            return defer.promise;
+    }
     $scope.searchProduct = function() {
         $scope.nameFound = false;
         console.log("now the model is :", $scope.textToSearch);
@@ -115,14 +140,14 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
     };
     $scope.selectedShow = function(thisProduct) {
         console.log("selected...", thisProduct);
-        $scope.resultShow = thisProduct[0].name;
+        $scope.resultShow = thisProduct.name;
         $scope.productResult = [thisProduct];
+        $scope.selectedShow  =false;
         console.log("productResult is ..", $scope.productResult);
         $scope.productResult.forEach(function(data) {
-            console.log("category will be : ", data[0].category);
-            console.log("sub category will be : ", data[0].subcategory);
+            console.log("category will be : ", data.category);
             $scope.menuList.forEach(function(value) {
-                if (value.name == data[0].category) {
+                if (value.name == data.category) {
                     for (var i = 0; i < $scope.menuList.length; i++) {
                         var j = i + 2;
                         if ($("ul.categoryList li:nth-child(" + j + ")").hasClass("fontBold")) {
@@ -143,7 +168,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                             console.log("promise data is :", $scope.sideSubCategoryList);
                             $scope.sideSubCategoryList.forEach(function(subValue) {
                                 console.log("sub value is ",subValue.name.replace(/ /g, ""))
-                                if (subValue.name.replace(/ /g,'') == data[0].subcategory) {
+                                if (subValue.name.replace(/ /g,'') == data.subcategory) {
                                     console.log("found");
                                     for (var i = 0; i < $scope.sideSubCategoryList.length; i++) {
                                         $("#subList" + i).css("font-weight", "normal");
@@ -168,27 +193,30 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
 
 
     };
-    $scope.getCategoryAttribute = function(query) {
-        console.log("query for category is :", query);
-        $http.post("/search/category", {
-                "query": query
-            })
-            .success(function(data) {
-                console.log("dtaa is ..", data);
-                $scope.allCategoryAttributes = [];
-                data.forEach(function(e) {
-                    var newAttribute = {};
-                    newAttribute["name"] = Object.keys(e)[0];
-                    newAttribute["value"] = e[Object.keys(e)[0]]
-                    $scope.allCategoryAttributes.push(newAttribute);
-                })
-                console.log("all attriuts are :", $scope.allCategoryAttributes);
-                $scope.attributeList = true;
-            })
-    };
+    // $scope.getCategoryAttribute = function(query) {
+    //     console.log("query for category is :", query);
+    //     $http.post("/search/category", {
+    //             "query": query
+    //         })
+    //         .success(function(data) {
+    //             console.log("dtaa is ..", data);
+    //             $scope.allCategoryAttributes = [];
+    //             data.forEach(function(e) {
+    //                 var newAttribute = {};
+    //                 newAttribute["name"] = Object.keys(e)[0];
+    //                 newAttribute["value"] = e[Object.keys(e)[0]]
+    //                 $scope.allCategoryAttributes.push(newAttribute);
+    //             })
+    //             console.log("all attriuts are :", $scope.allCategoryAttributes);
+    //             $scope.attributeList = true;
+    //         })
+    // };
     $scope.select = function(thisCategory, index) {
         console.log("....", index);
+        $scope.index = index;
         $scope.subresult = "";
+        $scope.selectedBrands = [];
+        console.log("brand query is :",$scope.brandQuery);
         $scope.menuList.forEach(function(data) {
             if ($scope.menuList[index].name != data.name) {
                 if (data["display"] == true) {
@@ -204,7 +232,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         }
 
 
-        $scope.showSubCategory(thisCategory.category_code, false);
+        $scope.showSubCategory(thisCategory.category_code, true);
         $scope.productFound = true;
         console.log(thisCategory);
         $scope.selectedAttributes = [];
@@ -227,27 +255,15 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         } else {
             $scope.categoryMatch = thisCategory.name.toLowerCase();
         }
-        query = {
-            "query": {
-                "filtered": {
-                    "filter": {
-                        "term": {
-                            "category": $scope.categoryMatch
-                        }
-                    }
-                }
-
-            },
-            "page": page,
-            "per_page": per_page
-        };
-        console.log("query is ", query);
-        $scope.getProducts(query);
+        
+        $scope.getCategoryProducts({"category":thisCategory.name});
+        // console.log("query is ", query);
+        // $scope.getProducts(query);
         var categoryQuery = thisCategory;
-        $scope.getCategoryAttribute(categoryQuery);
-        $scope.resultShow = thisCategory.name;
+        // $scope.getCategoryAttribute(categoryQuery);
+        $scope.resultShow = thisCategory;
         $scope.brandList = true;
-        $scope.subCategoryShow = false;
+        // $scope.subCategoryShow = false;
     };
     $scope.convertCategory = function(completeName) {
         var value = completeName.replace(/\W/g, " ");
@@ -261,7 +277,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
     $scope.nextPage = function() {
         page = page + per_page;
         query = {
-            "query": $scope.resultShow,
+            "query": $scope.resultShow.name,
             "page": page,
             "per_page": per_page
         };
@@ -271,6 +287,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
     };
 
     $scope.change = function(value, index, selected) {
+
         console.log("the things are .." + value + "and   " + index + "  " + selected);
         if (selected) {
             $scope.selectedBrands.push(value.toLowerCase());
@@ -278,26 +295,23 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             $scope.selectedBrands.splice($scope.selectedBrands.indexOf(value.toLowerCase()), 1);
         }
         console.log("hello...", $scope.selectedBrands);
-        brandQuery = [];
+        $scope.brandQuery = [];
         for (var i in $scope.selectedBrands) {
             $scope.selectedBrands[i] = $scope.selectedBrands[i].replace(/\W/g, " ");
 
             if ($scope.selectedBrands[i].indexOf(" ") != -1)
-                brandQuery.push($scope.selectedBrands[i].substr(0, $scope.selectedBrands[i].indexOf(" ")));
+                $scope.brandQuery.push($scope.selectedBrands[i].substr(0, $scope.selectedBrands[i].indexOf(" ")));
             else
-                brandQuery.push($scope.selectedBrands[i]);
+                $scope.brandQuery.push($scope.selectedBrands[i]);
         }
-        console.log("now the wuery is ..", brandQuery);
-        if (brandQuery.length == 0) {
+        console.log("now the wuery is ..", $scope.brandQuery);
+        if ($scope.brandQuery.length == 0) {
             console.log("length is 0 ", $scope.resultShow);
-            query = {
-                "query": $scope.resultShow,
-                "page": page,
-                "per_page": per_page
-            };
+            $scope.select($scope.resultShow,$scope.index);
+             $scope.menuList[$scope.index]["display"] = true;
 
         } else {
-            var categoryIs = $scope.convertCategory($scope.resultShow);
+            var categoryIs = $scope.convertCategory($scope.resultShow.name);
             console.log("no w selected category is :", categoryIs);
             query = {
                 "query": {
@@ -306,12 +320,9 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                             "bool": {
                                 "must": [{
                                     "terms": {
-                                        "brand": brandQuery
+                                        "brand": $scope.brandQuery
                                     }
-                                }, {
-                                    "term": {
-                                        "category": categoryIs
-                                    }
+                                
                                 }]
                             },
 
@@ -323,7 +334,19 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                 "per_page": per_page
             };
         }
-        $scope.getProducts(query);
+        $scope.getProducts(query)
+        .then(function(data) {
+            var show= [];
+            $scope.sideSubCategoryList.forEach(function(value){
+                for(var i=0;i<$scope.productResult.length;i++) {
+                    if(value.name == $scope.productResult[i].category) {
+                        show.push($scope.productResult[i]);
+                    }
+                }
+            })
+                console.log("sow is ",show);
+                $scope.productResult = show;
+        })
 
     };
     $scope.mouseleave = function() {
@@ -337,8 +360,10 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         $http.get("/category/" + category_name, {})
             .success(function(data) {
                 console.log("all sub categories are:", data);
-                $scope.subCategoryList = data;
-                $scope.sideSubCategoryList = data;
+                $scope.subCategoryList = data.subcategories;
+                $scope.sideSubCategoryList = data.subcategories;
+                 $scope.brandArray = [];
+                 $scope.brandArray = data.countBrand;
                 if ($scope.subCategoryList.length > 0 && value == true)
                     $scope.subCategoryShow = true;
                 else
@@ -418,7 +443,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             mustQueryObject["terms"] = $scope.removeSpace(data);
             mustQuery.push(mustQueryObject);
         });
-        var categoryIs = $scope.convertCategory($scope.resultShow);
+        var categoryIs = $scope.convertCategory($scope.resultShow.name);
 
         mustQuery.push({
             "term": {
@@ -461,40 +486,41 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         // };
     $scope.filterSubCategory = function(category, subCategory, index) {
         $scope.subresult = subCategory;
-        category = $scope.getSingle(category);
-        subCategory = $scope.getSingle(subCategory);
-        console.log("category is ", category);
-        console.log("sub category is :", subCategory);
-        var mustQuery = [];
-        mustQuery.push({
-            "term": {
-                "category": category
-            }
-        });
-        mustQuery.push({
-            "term": {
-                "subcategory": subCategory
-            }
-        });
-        console.log("must query is :", mustQuery);
-        query = {
-            "query": {
-                "filtered": {
-                    "filter": {
-                        "bool": {
-                            "must": mustQuery
+        // category = $scope.getSingle(category);
+        // subCategory = $scope.getSingle(subCategory);
+        // console.log("category is ", category);
+        // console.log("sub category is :", subCategory);
+        // var mustQuery = [];
+        // mustQuery.push({
+        //     "term": {
+        //         "category": category
+        //     }
+        // });
+        // mustQuery.push({
+        //     "term": {
+        //         "subcategory": subCategory
+        //     }
+        // });
+        // console.log("must query is :", mustQuery);
+        // query = {
+        //     "query": {
+        //         "filtered": {
+        //             "filter": {
+        //                 "bool": {
+        //                     "must": mustQuery
 
-                        },
+        //                 },
 
-                    }
-                }
+        //             }
+        //         }
 
-            },
-            "page": page,
-            "per_page": per_page
-        };
-        console.log("query is ", query);
-        $scope.getProducts(query);
+        //     },
+        //     "page": page,
+        //     "per_page": per_page
+        // };
+        // console.log("query is ", query);
+        // $scope.getProducts(query);
+        $scope.getCategoryProducts({"subCategory":subCategory});
         for (var i = 0; i < $scope.sideSubCategoryList.length; i++) {
             $("#subList" + i).css("font-weight", "normal");
         }

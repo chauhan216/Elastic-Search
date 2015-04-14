@@ -1,113 +1,69 @@
-[
+[ 
   {
-  "category_code":"Art&Design",
-  "name":"Art & Design"
+      "name" :"Kids Footwears",
+      "parent_category" :"Footwears",
+      "attributes" : ["Size","Age Group"]
   },
   {
-  "category_code":"BABY&KIDS",
-  "name":"BABY & KIDS"
+    "name": "LifeStyle",
+    "attributes" : ["Brand","Price","Availability","Discount"]
   },
   {
-  "category_code":"FASHION",
-  "name":"FASHION"
+    "name":"Watches",
+    "parent_category" :"LifeStyle",
+    "attributes" :["Ideal For", "Strap Material","Type","Dial Shape"]
   },
   {
-  "category_code":"HEALTH AND BEAUTY",
-  "name":"HEALTH AND BEAUTY"
+    "name" :"Wallets",
+    "parent_category" :"LifeStyle",
+    "attributes" : ["Ideal For" , "Material","Type","Color","Card Slots"]
   },
   {
-  "category_code":"food",
-  "name":"food"
+    "name" :"Suitcases",
+    "parent_category" :"LifeStyle",
+    "attributes"  :["Type","Wheels","Bag Size","Color"]
   },
   {
-  "category_code":"Sweets",
-  "name":"Sweets",
-  "parent_category":"food"
+    "name": "Sunglasses",
+    "parent_category" :"LifeStyle",
+    "attributes" :["Ideal For","Type","Size","Lens Feature","Usage","Style"]
   },
   {
-  "category_code":"JEWELRY",
-  "name":"JEWELRY"
+    "name":"Home Appliance",
+    "attributes" :["Brand","Price","Discount","Availability"]
   },
   {
-  "category_code":"Necklaces",
-  "name":"Necklaces",
-  "parent_category":"JEWELRY"
+    "name":"Irons",
+    "parent_category":"Home Appliance",
+    "attributes" :["Type","Power Consumption"]
   },
   {
-  "category_code":"ACCESSORIES",
-  "name":"ACCESSORIES"
+    "name":"Refrigertaors",
+    "parent_category":"Home Appliance",
+    "attributes" :["Type","Technology","Capacity","Ratings"]
   },
   {
-  "category_code":"Eyewear",
-  "name":"Eyewear",
-  "parent_category":"ACCESSORIES"
+    "name":"Air Conditioners",
+    "parent_category":"Home Appliance",
+    "attributes" :["Funtion Type","Type","Load Type","Capacity"]
   },
   {
-  "category_code":"HOME",
-  "name":"HOME"
+    "name":"Fans",
+    "parent_category":"Home Appliance",
+    "attributes" :["Type","Color","Blades"]
   },
   {
-  "category_code":"FURNITURE",
-  "name":"FURNITURE",
-  "parent_category":"HOME"
+    "name":"Outdoor & Adventures",
+    "attributes":["Brand","Price","Discount","Availability"]
   },
   {
-  "category_code":"TECH",
-  "name":"TECH"
+    "name":"Camping Bags",
+    "parent_category":"Outdoor & Adventures",
+    "attributes" :["Type","Color","Size"]
   },
   {
-  "category_code":"computers",
-  "name":"computers",
-  "parent_category":"TECH"
-  },
-  {
-  "category_code":"personal care",
-  "name":"personal care",
-  "parent_category":"HEALTH AND BEAUTY"
-  },
-  {
-  "category_code":"Shoes",
-  "name":"Shoes",
-  "parent_category":"FASHION"
-  },
-  {
-  "category_code":"textiles",
-  "name":"textiles",
-  "parent_category":"Art&Design"
-  },
-  {
-  "category_code":"POSTERS&PRINTS",
-  "name":"POSTERS & PRINTS",
-  "parent_category":"Art&Design"
-  },
-  {
-  "category_code":"FINEART",
-  "name":"FINE ART",
-  "parent_category":"Art&Design"
-  },
-  {
-  "category_code":"PHOTOGRAPHY",
-  "name":"PHOTOGRAPHY",
-  "parent_category":"Art&Design"
-  },
-  {
-  "category_code":"TOYS",
-  "name":"TOYS",
-  "parent_category":"BABY&KIDS"
-  },
-  {
-  "category_code":"CLOTHING",
-  "name":"CLOTHING",
-  "parent_category":"BABY&KIDS"
-  },
-  {
-  "category_code":"SUPPLIES",
-  "name":"SUPPLIES",
-  "parent_category":"BABY&KIDS"
-  },
-  {
-  "category_code":"GIFTS",
-  "name":"GIFTS",
-  "parent_category":"BABY&KIDS"
+    "name":"Helmets",
+    "parent_category":"Outdoor & Adventures",
+    "attributes" :["Size","Sport Type","Types"]
   }
 ]

@@ -171,6 +171,7 @@ function *setStores() {
     yield processStores(seed_data);
   }
 }
+
 var old_cat_code = {};
 function *processCategory(seed_data) {
   
@@ -181,18 +182,20 @@ function *processCategory(seed_data) {
       old_cat_code[category.category_code] = category_code;
       category.category_code = category_code;
       if (!category.parent_category) {
+        category.parent_category = "";
+      }
         var category = yield categoryDb.categoryCollection.findOneAndUpdate(
         {name: category.name},category,
         {upsert: true }
         ).exec();
-      }
-      else {
-        category.parent_category = old_cat_code[category.parent_category];
-        var category = yield categoryDb.categoryCollection.findOneAndUpdate(
-          {name: category.name},category,
-          {upsert: true }
-          ).exec();
-      }
+      // }
+      // else {
+      //   category.parent_category = old_cat_code[category.parent_category];
+      //   var category = yield categoryDb.categoryCollection.findOneAndUpdate(
+      //     {name: category.name},category,
+      //     {upsert: true }
+      //     ).exec();
+      // }
     }catch(err){
         console.log ("error"+err);
         throw(err)
@@ -337,7 +340,7 @@ co(function *(){
     break;
   case 'db:init':
     console.log("Initializing database...");
-    yield setStores();
+    // yield setStores();
     yield setCategories();
     yield setproducts();
     yield setReviews(); 

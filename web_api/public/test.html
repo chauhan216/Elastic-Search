@@ -2,7 +2,7 @@
 <input type="button" value="Search" ng-click="searchProduct()">
 <div id="allCategoryList">
     <ul>
-        <li ng-repeat="value in menuList" class="catlist{{$index}}" ng-click="select(value,$index)" >{{value.name}}</li>
+        <li ng-repeat="value in menuList" class="catlist{{$index}}" ng-click="select(value,$index)" >{{value.name}} <b style="color:grey;">|</b></li>
     </ul>
 </div>
 <!-- <div class="subCategory" ng-show="subCategoryShow" ng-mouseleave="subCategoryShow=false;">
@@ -11,7 +11,7 @@
     </ul>
 </div> -->
 <div ng-show="productFound" style="margin:10px 0px 0px 10px;"> Showing Results For :
-    <span>{{resultShow}}{{subresult.length>0 ? " > " : ""}} {{subresult}}</span> <span style="margin-left:50px;">    Showing {{total}} results </span>
+    <span>{{resultShow.name}}{{subresult.length>0 ? " > " : ""}} {{subresult}}</span> <span style="margin-left:50px;">    Showing {{total}} results </span>
     <!-- <span ng-show="nextShow" class="next" ng-click="nextPage()"> Next</span> -->
     <div ng-show="noResult"> No results found</div>
 </div>
@@ -24,7 +24,7 @@
                     <div ng-click="select(value,$index)">{{value.name}}</div>
                     <div id="sideSubCategory{{$index}}" ng-show="value.display">
                         <ul>
-                            <li class="sidesubcategory" id="subList{{$index}}" ng-repeat="item in sideSubCategoryList" ng-click="filterSubCategory(value.name,item.name,$index)"> > {{item.name}}</li>
+                            <li class="sidesubcategory" id="subList{{$index}}" ng-repeat="item in sideSubCategoryList" ng-click="filterSubCategory(value.name,item.name,$index)"> > {{item.name}} ({{item.count}})</li>
                         </ul>
                     </div>
                 </li>
@@ -34,7 +34,7 @@
             <ul>
                 <li class="listHeader"> Brand</li>
                 <li ng-repeat="value in brandArray">
-                    <input type="checkbox" ng-model="select" value="{{value}}" ng-change="change(value,$index,select)" id="ng-change-example1" />{{value}}
+                    <input type="checkbox" ng-model="select" value="{{value}}" ng-change="change(value.key,$index,select)" id="ng-change-example1" />{{value.key}} ({{value.doc_count}})
                 </li>
             </ul>
         </div>
@@ -51,12 +51,11 @@
         <div ng-repeat="value in productResult" class="containerP col-xs-5">
             <img src="download.jpg" class="col-xs-5 padding" />
             <div class="afterImage col-xs-7 ">
-                <div class="productName col-xs-11 padding">{{value[0].name}}</div>
-                <div class="productDesc col-xs-11 padding">{{value[0].description | limitTo : 40}}{{value[0].description.length>40?'......': ''}}{{!value[0].description?'No Description Available': ''}}</div>
-                <div class="productCat col-xs-11 padding">{{value[0].category}}</div>
-                <div class="productSubcat col-xs-11 padding">{{value[0].subcategory}}</div>
-                <div class="productBrand col-xs-11 padding">{{value[0].details.brand}}</div>
-                <div class="productMan col-xs-11 padding">{{value[0].details.manufacturer}}</div>
+                <div class="productName col-xs-11 padding">{{value.name}}</div>
+                <div class="productDesc col-xs-11 padding">{{value.description | limitTo : 40}}{{value.description.length>40?'......': ''}}{{!value.description?'No Description Available': ''}}</div>
+                <div class="productCat col-xs-11 padding">{{value.category}}</div>
+                <div class="productBrand col-xs-11 padding">{{value.details.brand}}</div>
+                <div class="productMan col-xs-11 padding">{{value.details.manufacturer}}</div>
             </div>
         </div>
     </div>
@@ -64,5 +63,5 @@
 <div class="list" ng-show="nameFound ">
     <ul>
         <li class="total"> Showing <span> {{total}} </span> Results</li>
-        <li ng-repeat="value in nameResult" ng-click="selectedShow(value)">{{value[0].name}}
+        <li ng-repeat="value in nameResult" ng-click="selectedShow(value)">{{value.name}}
 </div>

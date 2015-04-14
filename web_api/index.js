@@ -657,14 +657,8 @@ route.post("/search", function *() {
 
 route.post("/search/category", function *() {  
   console.log(" inside GET category /search",this.request.body);
-  
-  try{
-  var category = yield eapi.getCategorySearch({
-    query : this.request.body.query,
-    
+  var result = yield api.searchProducts({
+    name : this.request.body
   });
-  this.body = category;
-  } catch(err){
-  console.log(err);  
-  }
+  this.body = result;
 })

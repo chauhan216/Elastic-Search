@@ -16,7 +16,7 @@
 9 verbose stack     at maybeClose (child_process.js:1008:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
 10 verbose pkgid EpikkoMall-BackEnd@0.0.1
-11 verbose cwd /home/deepak/epikko/EpikkoMall-BackEnd
+11 verbose cwd /home/deepak/Desktop/elastic new
 12 error Linux 3.13.0-32-generic
 13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 14 error node v0.11.16

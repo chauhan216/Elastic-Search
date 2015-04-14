@@ -1,0 +1,92 @@
+{
+  "product_id": "product0001",
+  "name": "Micromax Canvas A2",
+  "description": "Advance Feature Mobile",
+  "category": "Mobiles",
+  "deliveryspecs": "US addresses only",
+  "shippingspecs": "$5 extra per flat order",
+  "returnsspecs": "Please mail us to get it replaced",
+  "pricing": {
+    "regularPrice": 100,
+    "offerPrice": 80,
+    "discountAmount": 20,
+    "offerPriceValidUpto": "2015-06-24T00:00:00.000Z"
+  },
+  "assets": {
+    "imagelinks": [
+      ""
+    ],
+    "videolinks": [
+      ""
+    ]
+  },
+  "attributes": [
+    {
+      "name": "Operating System",
+      "value": "Android 4.4.4"
+    },
+    {
+      "name": "Screen Size",
+      "value": "5 inches"
+    },
+    {
+      "name": "Sim Type",
+      "value": "Dual"
+    },
+    {
+      "name": "RAM Size",
+      "value": "2GB"
+    },
+    {
+      "name": "Camera",
+      "value": "5MP"
+    }
+  ],
+  "details": {
+    "brand": "Micromax",
+    "manufacturer": "Micromax"
+  },
+  "overallrating": 4
+},
+{
+  "product_id": "product0002",
+  "name": "NCase Flip Cover",
+  "description": "Flip cover for Redmi Note",
+  "category": "Cases & Covers",
+  "deliveryspecs": "US addresses only",
+  "shippingspecs": "$5 extra per flat order",
+  "returnsspecs": "Please mail us to get it replaced",
+  "pricing": {
+    "regularPrice": 10,
+    "offerPrice": 8,
+    "discountAmount": 2,
+    "offerPriceValidUpto": "2015-06-24T00:00:00.000Z"
+  },
+  "assets": {
+    "imagelinks": [
+      ""
+    ],
+    "videolinks": [
+      ""
+    ]
+  },
+  "attributes": [
+    {
+      "name": "Type",
+      "value": "Flip COver"
+    },
+    {
+      "name": "Material",
+      "value": "Cloth"
+    },
+    {
+      "name": "Color",
+      "value": "Black"
+    }
+  ],
+  "details": {
+    "brand": "NCase",
+    "manufacturer": "Redmi"
+  },
+  "overallrating": 3
+}

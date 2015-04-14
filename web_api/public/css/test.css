@@ -139,7 +139,7 @@ li.listHeader {
 }
 
 #allCategoryList {
-    padding: 2px 20px;
+    padding: 2px 10px;
     font-size: 18px;
     margin-top:10px;
     background-color: rgb(34, 195, 160);
@@ -151,7 +151,7 @@ li.listHeader {
 
 #allCategoryList ul li {
     display: inline;
-    margin: 0px 10px;
+    /*margin: 0px 1px;*/
 }
 
 #allCategoryList ul li:hover {

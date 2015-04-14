@@ -6,8 +6,8 @@ var config = {
 	},
   elastic:{
     url: 'http://localhost:9200',
-    productIndexName: 'elastictestproducts',
-    categoryIndexName : 'elastictestcategory'
+    productIndexName: 'mystore',
+    // categoryIndexName : 'elastictestcategory'
   },	
 };
 
