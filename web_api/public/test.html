@@ -34,17 +34,25 @@
             <ul>
                 <li class="listHeader"> Brand</li>
                 <li ng-repeat="value in brandArray">
-                    <input type="checkbox" ng-model="select" value="{{value}}" ng-change="change(value.key,$index,select)" id="ng-change-example1" />{{value.key}} ({{value.doc_count}})
+                    <input type="checkbox"  ng-model="select" value="{{value}}" ng-change="change(value.key,$index,select)" id="ng-change-example1" />{{value.key}} ({{value.doc_count}})
                 </li>
             </ul>
         </div>
-        <div class="category" ng-show="attributeList" ng-repeat="attribute in allCategoryAttributes">
+        <div class="category" ng-show="attributeList" >
             <ul>
-                <li class="listHeader"> {{attribute.name}}</li>
-                <li ng-repeat="value in attribute.value">
-                    <input type="checkbox" ng-model="attributeselect" value="{{value}}" id="ng-change-example1" ng-change="selectedAttribute(attribute.name,value,attributeselect)" />{{value}}
+                <li class="listHeader"> Price</li>
+                <li ng-repeat="value in priceRange" ng-class="{faded : value.doc_count==0}"> 
+                    <input type="checkbox"  ng-model="attributeselect" value="{{value}}" id="ng-change-example1" ng-change="selectedPrice(value,attributeselect)" />{{value.key}} ({{value.doc_count}})
                 </li>
+            
             </ul>
+        </div>
+        <div class="category" ng-repeat="data in attributes" style="margin-bottom:5px;">
+        <ul>
+        <li class="listHeader"  >{{data.name}}</li>
+        <li ng-repeat = "value in data.values">
+            <input type ="checkbox" />{{value}}
+        </li>
         </div>
     </div>
     <div class="col-xs-10 ">
@@ -56,6 +64,7 @@
                 <div class="productCat col-xs-11 padding">{{value.category}}</div>
                 <div class="productBrand col-xs-11 padding">{{value.details.brand}}</div>
                 <div class="productMan col-xs-11 padding">{{value.details.manufacturer}}</div>
+                <div class="productName col-xs-11 padding">${{value.pricing.offerPrice}}</div>
             </div>
         </div>
     </div>

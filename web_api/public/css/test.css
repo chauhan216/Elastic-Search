@@ -128,7 +128,7 @@ ul li {
     padding: 0px 10px;
 }
 
-li.listHeader {
+.listHeader {
     background-color: rgb(207, 165, 165);
     font-size: 18px;
     font-weight: bold;
@@ -189,4 +189,8 @@ li.listHeader {
 {
     background-color: white;
     color:orange;
+}
+.faded
+{
+    color:grey;
 }

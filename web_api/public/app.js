@@ -67,7 +67,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             }).error(function(data) {
                 defer.reject(data);
             });
-            return defer.promise;
+        return defer.promise;
     }
 
 
@@ -79,6 +79,8 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             .success(function(data) {
                 console.log("result is ", data);
                 $scope.productResult = data.product;
+                $scope.attributes = data.attributes;
+                console.log("attribues ar e", $scope.attributes);
                 console.log("result is ", $scope.productResult);
                 console.log("total hits are ..", data.total);
                 $scope.total = data.total;
@@ -93,7 +95,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             }).error(function(data) {
                 defer.reject(data);
             });
-            return defer.promise;
+        return defer.promise;
     }
     $scope.searchProduct = function() {
         $scope.nameFound = false;
@@ -107,10 +109,10 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             "per_page": per_page
         }
         $scope.getProducts(query)
-        .then(function(data) {
-            $scope.textToSearch = "";
-        })
-        
+            .then(function(data) {
+                $scope.textToSearch = "";
+            })
+
 
     };
     $scope.searchProductName = function() {
@@ -142,7 +144,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         console.log("selected...", thisProduct);
         $scope.resultShow = thisProduct.name;
         $scope.productResult = [thisProduct];
-        $scope.selectedShow  =false;
+        $scope.selectedShow = false;
         console.log("productResult is ..", $scope.productResult);
         $scope.productResult.forEach(function(data) {
             console.log("category will be : ", data.category);
@@ -167,22 +169,22 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                         .then(function(data1) {
                             console.log("promise data is :", $scope.sideSubCategoryList);
                             $scope.sideSubCategoryList.forEach(function(subValue) {
-                                console.log("sub value is ",subValue.name.replace(/ /g, ""))
-                                if (subValue.name.replace(/ /g,'') == data.subcategory) {
+                                console.log("sub value is ", subValue.name.replace(/ /g, ""))
+                                if (subValue.name.replace(/ /g, '') == data.subcategory) {
                                     console.log("found");
                                     for (var i = 0; i < $scope.sideSubCategoryList.length; i++) {
                                         $("#subList" + i).css("font-weight", "normal");
                                     }
                                     var subindex = $scope.sideSubCategoryList.indexOf(subValue);
-                                    
-                                    
+
+
                                 }
                             });
 
                         });;
 
 
-                    
+
                 }
             });
 
@@ -216,7 +218,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         $scope.index = index;
         $scope.subresult = "";
         $scope.selectedBrands = [];
-        console.log("brand query is :",$scope.brandQuery);
+        console.log("brand query is :", $scope.brandQuery);
         $scope.menuList.forEach(function(data) {
             if ($scope.menuList[index].name != data.name) {
                 if (data["display"] == true) {
@@ -248,22 +250,25 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         index = index + 2;
         $("ul.categoryList li:nth-child(" + index + ")").addClass("fontBold");
         page = 1;
-        $scope.brandArray = [];
+        // $scope.brandArray = [];
         console.log(thisCategory.name.substr(0, thisCategory.name.indexOf(" ")));
         if (thisCategory.name.indexOf(" ") != -1) {
             $scope.categoryMatch = thisCategory.name.substr(0, thisCategory.name.indexOf(" ")).toLowerCase()
         } else {
             $scope.categoryMatch = thisCategory.name.toLowerCase();
         }
-        
-        $scope.getCategoryProducts({"category":thisCategory.name});
-        // console.log("query is ", query);
-        // $scope.getProducts(query);
+
+        $scope.getCategoryProducts({
+            "category": thisCategory.name
+        });
         var categoryQuery = thisCategory;
-        // $scope.getCategoryAttribute(categoryQuery);
         $scope.resultShow = thisCategory;
         $scope.brandList = true;
-        // $scope.subCategoryShow = false;
+        $timeout(function(){
+
+          $(".faded input").attr("disabled",true);
+          $(".faded input").css("cursor","default");
+        },400);
     };
     $scope.convertCategory = function(completeName) {
         var value = completeName.replace(/\W/g, " ");
@@ -307,8 +312,8 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         console.log("now the wuery is ..", $scope.brandQuery);
         if ($scope.brandQuery.length == 0) {
             console.log("length is 0 ", $scope.resultShow);
-            $scope.select($scope.resultShow,$scope.index);
-             $scope.menuList[$scope.index]["display"] = true;
+            $scope.select($scope.resultShow, $scope.index);
+            $scope.menuList[$scope.index]["display"] = true;
 
         } else {
             var categoryIs = $scope.convertCategory($scope.resultShow.name);
@@ -322,7 +327,7 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                                     "terms": {
                                         "brand": $scope.brandQuery
                                     }
-                                
+
                                 }]
                             },
 
@@ -335,18 +340,18 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
             };
         }
         $scope.getProducts(query)
-        .then(function(data) {
-            var show= [];
-            $scope.sideSubCategoryList.forEach(function(value){
-                for(var i=0;i<$scope.productResult.length;i++) {
-                    if(value.name == $scope.productResult[i].category) {
-                        show.push($scope.productResult[i]);
+            .then(function(data) {
+                var show = [];
+                $scope.sideSubCategoryList.forEach(function(value) {
+                    for (var i = 0; i < $scope.productResult.length; i++) {
+                        if (value.name == $scope.productResult[i].category) {
+                            show.push($scope.productResult[i]);
+                        }
                     }
-                }
-            })
-                console.log("sow is ",show);
+                })
+                console.log("sow is ", show);
                 $scope.productResult = show;
-        })
+            })
 
     };
     $scope.mouseleave = function() {
@@ -362,8 +367,11 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                 console.log("all sub categories are:", data);
                 $scope.subCategoryList = data.subcategories;
                 $scope.sideSubCategoryList = data.subcategories;
-                 $scope.brandArray = [];
-                 $scope.brandArray = data.countBrand;
+                $scope.brandArray = [];
+                $scope.brandArray = data.countBrand;
+                $scope.priceRange = data.priceRange;
+
+                $scope.attributeList = true;
                 if ($scope.subCategoryList.length > 0 && value == true)
                     $scope.subCategoryShow = true;
                 else
@@ -473,59 +481,88 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
 
     };
     $scope.getSingle = function(value) {
-            value = value.replace(/\W/g, " ").toLowerCase();
-            if (value.indexOf(" ") != -1)
-                return value.substr(0, value.indexOf(" "));
-            else
-                return value;
-        }
-        // $scope.showSideSubCategory = function(category_code, index) {
-        //     $scope.sideSubCategoryList = $scope.showSubCategory(category_code, index);
-        //     $scope.subCategoryShow = false;
-        //     console.log("sideSubCategoryList is ", $scope.sideSubCategoryList);
-        // };
+        value = value.replace(/\W/g, " ").toLowerCase();
+        if (value.indexOf(" ") != -1)
+            return value.substr(0, value.indexOf(" "));
+        else
+            return value;
+    };
+
     $scope.filterSubCategory = function(category, subCategory, index) {
         $scope.subresult = subCategory;
-        // category = $scope.getSingle(category);
-        // subCategory = $scope.getSingle(subCategory);
-        // console.log("category is ", category);
-        // console.log("sub category is :", subCategory);
-        // var mustQuery = [];
-        // mustQuery.push({
-        //     "term": {
-        //         "category": category
-        //     }
-        // });
-        // mustQuery.push({
-        //     "term": {
-        //         "subcategory": subCategory
-        //     }
-        // });
-        // console.log("must query is :", mustQuery);
-        // query = {
-        //     "query": {
-        //         "filtered": {
-        //             "filter": {
-        //                 "bool": {
-        //                     "must": mustQuery
-
-        //                 },
-
-        //             }
-        //         }
-
-        //     },
-        //     "page": page,
-        //     "per_page": per_page
-        // };
-        // console.log("query is ", query);
-        // $scope.getProducts(query);
-        $scope.getCategoryProducts({"subCategory":subCategory});
+        $scope.getCategoryProducts({
+            "subCategory": subCategory
+        });
         for (var i = 0; i < $scope.sideSubCategoryList.length; i++) {
             $("#subList" + i).css("font-weight", "normal");
         }
 
         $("#subList" + index).css("font-weight", "bold");
+
+    };
+
+    $scope.range = [];
+    $scope.selectedPrice = function(price, value) {
+        // console.log("price .."+price +'  value si  ..'+value);
+        var from = price.from || 0;
+        var to = price.to || 100000;
+        if(value) {
+          $scope.range.push(from);
+          $scope.range.push(to);
+          
+        } else
+        {
+          $scope.range.splice($scope.range.indexOf(from),1);
+          $scope.range.splice($scope.range.indexOf(to),1); 
+        }
+        // $scope.range = _.uniq($scope.range);
+       
+        console.log("max is  is :",_.max($scope.range));
+        console.log("form is", from);
+        console.log("to is ", to);
+        var catName = [];
+        $scope.sideSubCategoryList.forEach(function(data) {
+          catName.push(data.name);
+        });
+        console.log("terms are ", catName)
+        if($scope.range.length>0) 
+        {
+          var max = _.max($scope.range);
+          var min = _.min($scope.range);
+          query = {
+            "query": {
+                "filtered": {
+                    "filter": {
+                        "bool": {
+                            "must": [{
+                                "terms": {
+                                    "category.org": catName
+                                }
+                            }, {
+                                "range": {
+                                    "price": {
+                                        "gte": min,
+                                        "lte":max
+
+                                    }
+                                }
+                            }]
+                        }
+
+                    }
+                }
+            },
+            "page": page,
+            "per_page": per_page
+        };
+        console.log("query is :",query);
+        $scope.getProducts(query);
+        }
+        else
+        {
+          $scope.select($scope.resultShow,$scope.index);
+        }
+        
 
     }
 
