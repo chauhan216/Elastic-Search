@@ -11,6 +11,9 @@
   },
   
   "version": "0.0.1",
+  "devDependencies": {
+    
+  },
   "dependencies": {
     "co-views": "^0.3.0",
     "co-read":"0.1.1",

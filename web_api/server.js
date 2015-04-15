@@ -5,11 +5,11 @@ var send = require("koa-send");
 var views = require("koa-views");
 var mount = require("koa-mount");
 var statview = require("co-views");
-
+var path = require("path");
 var bodyparser = require("koa-bodyparser");
 var koarender = require("koa-render");
 var v1 = require('./');
-var render = statview(__dirname + "/public",{ map: { html: 'underscore', js: "js" }});
+var render = statview(path.join(__dirname , ".." ,"public"),{ map: { html: 'underscore', js: "js" }});
 // for development propose only
 app.use(require('koa-cors')({
 methods: 'GET,HEAD,PUT,POST,DELETE,OPTIONS',
@@ -39,7 +39,7 @@ app.use(function *(){
      return this.body = yield render("index.html");
    }
    else {
-     yield send(this, this.path, { root: __dirname+"/public"});
+     yield send(this, this.path, { root: path.join(__dirname , ".." ,"public")});
    }
 })
 app.listen(3000);
