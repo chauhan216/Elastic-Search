@@ -17,7 +17,7 @@
 </div>
 <div class="allProducts col-xs-12" ng-show="productFound " style="padding:10px ">
     <div class="sidebar col-xs-2 padding">
-        <div class="category">
+        <div class="category" >
             <ul class="categoryList">
                 <li class="listHeader"> Category</li>
                 <li ng-repeat="value in menuList">
@@ -50,8 +50,8 @@
         <div class="category" ng-repeat="data in attributes" style="margin-bottom:5px;">
         <ul>
         <li class="listHeader"  >{{data.name}}</li>
-        <li ng-repeat = "value in data.values">
-            <input type ="checkbox" />{{value}}
+        <li ng-repeat = "value in data.values" ng-class="{faded : value.doc_count==0}">
+            <input type ="checkbox" />{{value.key}} ({{value.doc_count}})
         </li>
         </div>
     </div>

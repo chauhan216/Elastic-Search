@@ -80,12 +80,13 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
                 console.log("result is ", data);
                 $scope.productResult = data.product;
                 $scope.attributes = data.attributes;
-                console.log("attribues ar e", $scope.attributes);
+                console.log("attribues are", $scope.attributes);
                 console.log("result is ", $scope.productResult);
                 console.log("total hits are ..", data.total);
+
                 $scope.total = data.total;
                 if ($scope.productResult.length > 0) {
-
+                    
                     $scope.noResult = false;
                 } else {
 
@@ -493,12 +494,12 @@ testElastic.controller("testController", function($scope, $http, $timeout, $q) {
         $scope.getCategoryProducts({
             "subCategory": subCategory
         });
-        for (var i = 0; i < $scope.sideSubCategoryList.length; i++) {
-            $("#subList" + i).css("font-weight", "normal");
-        }
-
-        $("#subList" + index).css("font-weight", "bold");
-
+        $scope.attributeList = false;
+        $scope.brandList = false;
+        $timeout(function(){
+          $(".faded input").attr("disabled",true);
+          $(".faded input").css("cursor","default");
+        },400);
     };
 
     $scope.range = [];
