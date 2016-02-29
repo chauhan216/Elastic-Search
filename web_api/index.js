@@ -66,6 +66,20 @@ route.get("/reviews/:product_id", function *() {
   }
 })
 
+
+
+route.get("/fgsd/:product_id", function *() {  
+  console.log(" inside GET /reviews/:product_id");
+  try{
+    var reviews = yield api.getReviews({
+      "product_id" : this.params.product_id
+    });
+    this.body = reviews;
+  } catch(err){
+    this.body = ""+err;
+  }
+})
+
 /**
  * @name PUT /review/:creator_id
  * @desc

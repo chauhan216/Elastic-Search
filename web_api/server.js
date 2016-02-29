@@ -5,7 +5,7 @@ var send = require("koa-send");
 var views = require("koa-views");
 var mount = require("koa-mount");
 var statview = require("co-views");
-
+var me = 7;
 var bodyparser = require("koa-bodyparser");
 var koarender = require("koa-render");
 var v1 = require('./');
