@@ -4,10 +4,7 @@ var route = new router();
 exports = module.exports = route;
 var api = require("../lib/store/api.js");
 var eapi = require("../lib/store/elastic_api.js");
-
-
-
-
+console.log("..hello..");
 
 
 /**
