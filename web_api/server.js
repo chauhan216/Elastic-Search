@@ -6,6 +6,7 @@ var views = require("koa-views");
 var mount = require("koa-mount");
 var statview = require("co-views");
 var path = require("path");
+var me = 5;
 var bodyparser = require("koa-bodyparser");
 var koarender = require("koa-render");
 var v1 = require('./');
